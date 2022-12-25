@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+        "left right";
+    grid-template-columns: 50% 50%;
+    background-color: white;
+    user-select: none;
+}
+
+.right /* LEFT */ {
+    background-image: url(/assets/diogo-brandao-Yc5mnBO-Jjc-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.module {
+    width: 100%;
+    height: 100%;
+    background: rgba(51, 51, 51, 0.5);
+}
+
+.navbar {
+    gap: 32px;
+    width: 100%;
+    height: 5.5rem;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding: 0px 32px 0px 32px;
+    justify-content: space-between;
+}
+
+#nav-logo {
+    width: 350px;
+    cursor: pointer;
+}
+
+#nav-logo:hover {
+    transition: 0.3s;
+    transform: scale(1.02);
+}
+
+#nav-logo:not(:hover) {
+    transition: 0.3s;
+}
+
+.signin-btn {
+    cursor: pointer;
+    width: 72px;
+    height: 32px;
+    background: transparent;
+    border: 1px solid #dddddd;
+    color: white;
+    border-radius: 5px;
+}
+
+.signin-btn:hover {
+    background-color: #dddddd;
+    color: black;
+    transition: 0.3s;
+}
+
+.signin-btn:not(:hover) {
+    transition: 0.3s;
+}
+
+/*  LEFT */
+
+.left /* RIGHT */ {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+
+#title {
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+.btns {
+    padding: 10px;
+    width: 350px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 24px;
+}
+
+#git {
+    cursor: pointer;
+    gap: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    height: 48px;
+    background-color: #24292e;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 6px;
+    border: none;
+}
+
+#git-icn {
+    font-size: 24px;
+}
+
+#apple-icn {
+    font-size: 24px;
+}
+
+#google-icn {
+    font-size: 24px;
+}
+
+#apple {
+    border: none;
+    cursor: pointer;
+    gap: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    height: 48px;
+    background-color: #000000;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 6px;
+}
+
+#google {
+    border: 2px solid #eaeaea;
+    cursor: pointer;
+    gap: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    height: 48px;
+    background-color: #0052cc;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 6px;
+}
+
+#git:hover {
+    background-color: #4a4a4b;
+    transition: 0.4s;
+}
+
+#git:not(:hover) {
+    transition: 0.4s;
+}
+
+#apple:hover {
+    background-color: #2a2a2a;
+    transition: 0.4s;
+}
+
+#apple:not(:hover) {
+    transition: 0.4s;
+}
+
+#google:hover {
+    background-color: #2b6ccd;
+    transition: 0.4s;
+}
+
+#google:not(:hover) {
+    transition: 0.4s;
+}
+
+#email-btn {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #0070f3;
+    font-size: 16px;
+}
+
+#email-btn:hover {
+    text-decoration: underline;
+}

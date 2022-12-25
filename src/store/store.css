@@ -1,0 +1,382 @@
+@import url('https://fonts.cdnfonts.com/css/avenir');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/mark-pro');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: grid;
+    grid-template-areas: 
+        "ribbon"
+        "navbar"
+        "main"
+        "section";
+    grid-template-rows: 3rem 5.5rem 100% 100%;
+    user-select: none;
+}
+
+/* NAV BAR */
+
+.navbar {
+    border-bottom: 1px solid #eaeaea;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 150px 0px 150px;
+    gap: 72px;
+    font-family: 'Avenir', 'Inter', sans-serif;
+}
+
+#logo {
+    width: 300px;
+    cursor: pointer;
+}
+
+#logo:hover {
+    transition: 0.4s;
+    transform: scale(1.02);
+}
+
+#logo:not(:hover) {
+    transition: 0.4s;
+}
+
+#a-top {
+    text-decoration: none;
+    color: #1c1e21;
+    font-size: 11pt;
+}
+
+#a-top-sel {
+    color: #0070f3;
+    text-decoration: none;
+    font-size: 11pt;
+}
+
+#a-top:hover {
+    color: #444444;
+    font-weight: 500;
+    transition: 0.3s;
+    border-bottom: 1px solid #0070f3;
+}
+
+#a-top:not(:hover) {
+    transition: 0.3s;
+}
+
+.top-btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.side-btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+#sign-up {
+    cursor: pointer;
+    width: 72px;
+    height: 32px;
+    background-color: transparent;
+    color: #666666;
+    border: none;
+    border: 0.5px solid #666666;
+    border-radius: 5px;
+}
+
+#sign-up:hover {
+    transition: 0.3s;
+    color: black;
+    border-color: black;
+}
+
+#sign-up:not(:hover) {
+    transition: 0.3s;
+}
+
+#sign-in {
+    cursor: pointer;
+    width: 72px;
+    height: 32px;
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#sign-in:hover {
+    background-color: transparent;
+    border: 1px solid #0070f3;
+    color: #0070f3;
+    transition: 0.3s;
+}
+
+#sign-in:not(:hover) {
+    transition: 0.3s;
+}
+
+#new {
+    padding: 2px;
+    font-size: 10px;
+    font-weight: 600;
+    color: white;
+    background-color: #fc6d26;
+    border-radius: 5px;
+}
+
+.cart {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 40px;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    color: #666666;
+    gap: 5px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.cart:hover {
+    transition: 0.3s;
+    border: 1px solid #0070f3;
+    color: #0070f3;
+}
+
+.cart:not(:hover) {
+    transition: 0.3s;
+}
+
+.account {
+    font-size: 13px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 125px;
+    height: 40px;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    color: #666666;
+    gap: 5px;
+}
+
+.account:hover {
+    transition: 0.3s;
+    border: 1px solid #0070f3;
+    color: #0070f3;
+}
+
+.account:not(:hover) {
+    transition: 0.3s;
+}
+
+/* RIBBON */
+
+.ribbon {
+    font-family: 'Avenir', sans-serif;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #344854;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.6;
+    text-transform: uppercase;
+}
+
+#ribbon-a {
+    text-decoration: none;
+    color: #0070f3;
+}
+
+#ribbon-a:hover {
+    text-decoration: underline;
+}
+
+/* MAIN */
+
+.main {
+    background-color: #f5f5f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.start {
+    width: 100%;
+    height: 99%;
+    background-image: url(/assets/b.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+.filter {
+    padding: 150px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background: rgba(51, 51, 51, 0.5);
+    /*backdrop-filter: blur(2.5px);*/
+}
+
+.start-content {
+    justify-content: center;
+    gap: 10px;
+    width: 900px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.title {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+#start-title-a {
+    font-family: 'Mark Pro';
+    font-weight: 500;
+    letter-spacing: -1px;
+    color: white;
+    font-size: 64px;
+}
+
+#start-coupon-a {
+    font-family: 'Avenir', sans-serif;
+    color: #dadada;
+    font-size: 18px;
+}
+
+.coupon {
+    cursor: pointer;
+    width: 180px;
+    height: 52px;
+    background-color: #0070f3;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.start-btns {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+}
+
+.store-view {
+    cursor: pointer;
+    width: auto;
+    height: 52px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+
+h1 { 
+    color: white;
+    font-size: 16px;
+    display: inline-block; 
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+h1:after {
+    display: block;
+    content: '';
+    border-bottom: solid 1px white;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+}
+
+h1:hover:after { transform: scaleX(1); }
+h1.fromRight:after{ transform-origin:100% 50%; }
+h1.fromLeft:after{  transform-origin:  0% 50%; }
+
+.circle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 360px;
+}
+
+.coupon:hover {
+    background-color: transparent;
+    border: 1px solid #0070f3;
+    color: white;
+    transition: 0.3s;
+}
+
+.coupon:not(:hover) {
+    transition: 0.3s;
+}
+
+#coupon-txt {
+    font-family: 'Mark Pro', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#copy {
+    font-size: 20px;
+    color: gray;
+    margin-left: 4px;
+}
+
+/* CONTINUITY */
+
+.section {
+    font-family: 'Mark Pro', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    background-color: white;
+}
