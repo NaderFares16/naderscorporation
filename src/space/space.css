@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #111111;
+    display: grid;
+    grid-template-areas: 
+        "navbar"
+        "main";
+    grid-template-rows: 5.5rem 1fr;
+    user-select: none;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 72px 10px;
+    gap: 32px;
+    justify-content: space-between;
+}
+
+.top-btns {
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+#t-btn:hover {
+    color: #9d9d9d;
+    border-bottom: 1px solid #9d9d9d;
+}
+
+#t-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    color: #dddddd;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 1.6;
+    letter-spacing: 4px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+#t-btn-sel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    color: #ff0000;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.6;
+    letter-spacing: 4px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid #ff0000;
+}
+
+#t-btn-sel:hover {
+    color: #dddddd;
+    font-weight: 300;
+}
+
+#logo {
+    width: 420px;
+    transition: all 0.3s ease;
+}
+
+#logo:hover {
+    transform: scaleX(1.02);
+}
+
+.launch-book {
+    width: 250px;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#launch-book {
+    width: 250px;
+    height: 44px;
+    color: #dddddd;
+    border: 1px solid #ff0000;
+    border-radius: 24px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    font-size: 13px;
+    letter-spacing: 2px;
+    line-height: 1.6;
+}
+
+#launch-book:hover {
+    background-color: #ff0000;
+}
+
+.main {
+    background-image: url(/assets/52461270917_57db2b53a5_k.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-card {
+    width: auto;
+    height: auto;
+    background: rgba(51, 51, 51, 0.5);
+    backdrop-filter: blur(8.5px);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    justify-content: center;
+    gap: 32px;
+}
+
+#mission-title {
+    color: white;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 24px;
+    text-transform: capitalize;
+}
+
+.countdown-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.countdown-el-days-c {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    color: white;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.countdown-el-hours-c {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    color: white;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.countdown-el-mins-c {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    color: white;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.countdown-el-seconds-c {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    color: white;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.main-btns {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+#learn {
+    width: 200px;
+    height: 44px;
+    font-size: 14px;
+    line-height: 4px;
+    font-weight: 500;
+    background-color: transparent;
+    border-radius: 6px;
+    border: none;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+    padding: 10px;
+}
+
+#updates {
+    width: 200px;
+    height: 44px;
+    font-size: 14px;
+    line-height: 4px;
+    font-weight: 500;
+    background-color: transparent;
+    border-radius: 6px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+    padding: 10px;
+}
