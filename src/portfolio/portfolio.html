@@ -2,102 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/home.css">
+    <link rel="stylesheet" href="/src/portfolio/portfolio.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="shortcut icon" href="/src/favicon.ico" type="image/x-icon">
-    <script src="/src/index.js"></script>
-    <title>Home - Nader's Corporation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Nader's Corporation</title>
 </head>
 
 <body>
 
-    <div class="ribbon">
-
-        <i style="font-size: 24px;" class='bx bxs-package' ></i>
-        <p>Enjoy free shipping and returns on orders over $200 through December 25th.</p>
-        <a style="display: flex; flex-direction: row; align-items: center; justify-content: center; margin-right: 0;" id="r-store" href="/src/store/store.html">Go to shop</a>
-
-    </div>
-    
     <div class="navbar">
 
-        <div class="nav-logo">
-            <a href="/index.html"><img id="nav-logo" src="/assets/newlogo-test.svg" alt=""></a>
+        <div class="navbar-logo">
+            <a href="/index.html"><img id="logo" src="/assets/newlogo-test.svg" alt=""></a>
         </div>
 
-        <div class="nav-a">
-            <a id="nav-btn-new" href="/src/space/space.html">Space Solutions <span id="new-nav-ss">NEW</span></a>
-            <a id="nav-btn-new" href="/src/portfolio/portfolio.html">My Portfolio <span id="new-nav">NEW</span></a>
-            <a id="nav-btn" href="/src/nader_os/system.html">NaderOS</a>
-            <a id="nav-btn" href="/src/store/store.html">Shop</a>
-            <a id="nav-btn" href="/src/pricing/pricing.html">Pricing</a>
-            <a id="nav-btn" href="https://ironhorse.netlify.app">IronHorse</a>
-            <a id="nav-btn" href="/src/contact/contact.html">Support</a>
-        </div>
-
-        <div style=" display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 24px;" class="nav-side-btns">
-            <a href="/src/login-dark-page/sign-up-dark.html"><button id="sign-up">Sign Up</button></a>
-            <a href="/src/sign-in-new/sign-in-new.html"><button id="sign-in">Sign In</button></a>
-            <a class="a-git" href="https://github.com/NaderFares16"><i style="font-size: 32px; text-decoration: none; color: black;" id="github" class='bx bxl-github'></i></a>
+        <div class="nav-links">
+            <a id="nav-a-sel" href="/src/portfolio/portfolio.html">Home</a>
+            <a id="nav-a" href="#">My Projects</a>
+            <a id="nav-a" href="/src/contact/contact.html">Support</a>
+            <div class="divider"></div>
+            <button id="subscribe-btn">Subscribe</button>
         </div>
 
     </div>
 
     <div class="main">
 
-       <div class="container">
+        <div class="headline-banner">
 
-            <div class="m-title">
+            <div class="left">
 
-                <p class="m-title-txt" id="title-up">A Corporation Focused</p>
-                <p class="m-title-txt" id="title-down">On Developing</p>
-
-                <div class="m-description">
-
-                    <p id="d-up">Nader's Corporation operates in the field of advanced technology, creating innovative products</p>
-
-                    <p id="d-down">to make everyday life easier using state-of-the-art technology.</p>
-
-                </div>
-
-                <div class="m-title-btns">
-
-                    <button id="start">Get Started</button>
-                    <button id="doc">Documentation</button>
-        
-                </div>
+                <p id="left-text">Hello, I'm a beginner web developer and here I post some projects I do.</p>
 
             </div>
 
-            <div class="newsletter">
+            <div class="right">
 
-                <div class="news-content">
-
-                    <div class="news-left">
-
-                    <h1>Nader's Corporation is improving every day —</h1>
-                    <h2>don't miss out on all the action.</h2>
-                    <p id="p-1">Join the NC newsletter and stay updated on new releases and features, guides, and case studies.</p>
-
-                    </div>
-
-                    <div class="news-right">
-
-                        <form id="news-form">
-
-                            <input type="email" name="email" id="i-email" placeholder="you@domain.com" required>
-                            <button id="news-btn" type="submit">Subscribe</button>
-
-                        </form>
-
-                    </div>
-
-                </div>
+                <img id="ilustration-logo" src="/assets/ilustration-portfolio.svg" alt="">
 
             </div>
 
-       </div> <!-- CONTAINER -->
+        </div>
+
+        <div class="main-content">
+
+            <div class="main-left"></div>
+
+            <div class="main-right"></div>
+
+        </div>
 
     </div>
 
@@ -137,7 +90,7 @@
                         <a id="a-fotter-links" href="/src/pricing/pricing.html">Pricing</a>
                         <a id="a-fotter-links" href="/src/contact/contact.html">Support</a>
                         <a id="a-fotter-links" href="/src/careers/careers.html">Careers</a>
-                        <a id="a-fotter-links" href="#">&nbsp</a>
+                        <a id="a-fotter-links" href="#">&nbsp;</a>
                         
                     </div>
 
@@ -195,7 +148,7 @@
         </div>
 
     </div>
-
+    
 </body>
 
 </html>
