@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+     "ribbon"
+     "navbar"
+     "main"
+     "footer";
+     grid-template-rows: 3rem 5.5rem 1fr 3rem;
+     user-select: none;
+}
+
+/* RIBBON */
+
+.ribbon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 150px 0px 150px;
+    justify-content: space-between;
+}
+
+.ribbon-btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    font-size: 1rem;
+}
+
+#rib-btn {
+    text-decoration: none;
+    color: black;
+}
+
+#rib-btn:hover {
+    border-bottom: 1px solid black;
+}
+
+#search-box {
+    width: 300px;
+    height: 32px;
+    border: none;
+    border-bottom: 1px solid gray;
+    padding: 0px 16px 0px 5px;
+    outline: none;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    color: black;
+}
+
+#search-box:hover {
+    border-bottom: 1px solid #BA3426;
+
+}
+
+.back-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+#back-title:hover {
+    border-bottom: 1px solid black;
+}
+
+/* NAVBAR */
+
+.navbar {
+    background-color: #BA3426;
+    display: flex;
+    flex-direction: row;
+    padding: 0px 150px 0px 150px;
+    gap: 72px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.02);
+}
+
+.divider {
+    width: 1px;
+    height: 32px;
+    background-color: #eaeaea;
+}
+
+#logo-title {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+#logo-subtitle {
+    color: #eaeaea;
+}
+
+.nav-sections {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.nav-divider {
+    width: 1px;
+    height: 20px;
+    background-color: white;
+}
+
+#nav-btn {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+#nav-btn:hover {
+    border-bottom: 1px solid white;
+}
+
+/* MAIN */
+
+.main {
+    background-color: white;
+    margin: 16px 150px 16px;
+}
+
+.highlights {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: 320px;
+}
+
+#headline {
+    width: 100%;
+    height: 100%;
+    background-color: #f8f8f8;
+    cursor: pointer;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.description {
+    color: #444444;
+}
+
+.left-column {
+    padding: 24px 16px 10px;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.date {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    gap: 5px;
+    color: #444444;
+}
+
+.right-column {
+    width: 60%;
+    height: 100%;
+    background-image: url(/assets/lula.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.square {
+    display: flex;
+    flex-direction: row;
+}
+
+#other {
+    width: 60%;
+    height: 100%;
+    background-image: url(/assets/error.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* FOOTER */
+
+.footer {
+    border-top: 1px solid #eaeaea;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    gap: 72px;
+    color: #444444;
+    justify-content: center;
+}
+
+.a-bottom {
+    gap: 24px;
+}
+
+#a-bottom {
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #444444;
+    margin-right: 10px;
+}
+
+#a-bottom:hover {
+    border-bottom: 1px solid #444444;
+}
+
+#copyright {
+    font-size: 14px;
+    font-weight: 400;
+}
+ 
+#flag {
+    width: 16px;
+}
+
+.region {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+#r-name {
+    text-decoration: none;
+    color: #0070f3;
+    font-size: 14px;
+}
+
+#r-name:hover {
+    border-bottom: 1px solid #0070f3;
+}
+
+.section {
+    width: 100%;
+    height: 100%;
+    background-color: #858484;
+}
