@@ -3,7 +3,7 @@ const hoursEl = document.getElementById("hours");
 const minsEl = document.getElementById("mins");
 const secondsEl = document.getElementById("seconds");
 
-const launch = "18 Jun 2023";
+const launch = "13 Mar 2023";
 
 function countdown() {
     
